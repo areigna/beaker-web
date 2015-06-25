@@ -11,7 +11,7 @@ function goTo (index, force) {
       currentIndex = index;
     });
     //randomly rotate iphone
-    rotate( $('#iphone'), Math.random() * -80);
+    rotate( $('#iphone'), Math.random() * -70);
   });
 }
 

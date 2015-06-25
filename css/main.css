@@ -54,13 +54,13 @@ body {
 #iphone {
   -webkit-transition: 2s;
   transition: 2s;
-  width: 291px;
-  height: 559px;
+  width: 25vw;
+  height: 80vh;
   position: fixed;
-  top: 5%; right: 30%;
-  -ms-transform-origin: 100% 50%; /* IE 9 */
-  -webkit-transform-origin: 100% 50%; /* Chrome, Safari, Opera */
-  transform-origin: 100% 50%;
+  top: 10%; right: 30%;
+  -ms-transform-origin: 80% 50%; /* IE 9 */
+  -webkit-transform-origin: 80% 50%; /* Chrome, Safari, Opera */
+  transform-origin: 80% 50%;
 }
 #iphone img{
   position: absolute;
