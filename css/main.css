@@ -31,11 +31,9 @@ p {
 
 body {
   text-align: center;
-  background: black;
 }
 
 #main > div {
-  background: white;
   text-align: left;
   position: fixed;
   width: 100%;
