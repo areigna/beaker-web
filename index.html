@@ -22,96 +22,95 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				sectionsColor: ['rgba(0,0,0,0)','black','black','black','black','black'],
-        //autoScrolling: false,
-        onLeave: function(index, nextIndex, direction){
-          $('#iphone').removeClass('transparent');
-          nextIndex % 2 ? moveRight() : moveLeft();
-        },
+        autoScrolling: false,
 			});
 		});
-    function rotate (degree) {
-      var value = 'rotate(' + degree +'deg)';
-      $('#iphone').css({
-        '-ms-transform': value,
-        '-webkit-transform': value,
-        'transform': value
-      });
-    }
-    function moveLeft() {
-      move(10, 20);
-      rotate(10);
-    }
-    function moveRight() {
-      move(10, 50);
-      rotate(-10);
-    }
-    function move(top, left) {
-      $('#iphone').css({
-        top: top+'%',
-        left: left+'%',
-      });
-    }
 	</script>
 
 </head>
 <body>
 
-<div id="iphone" class="transparent">
-  <!-- iphone frame -->
-  <img src="img/iphone.png" />
-  <!-- screen content -->
-  <img src="img/content/0.png" class="screen hidden" id="screen0"/>
-  <img src="img/content/1.png" class="screen hidden" id="screen1"/>
-  <img src="img/content/2.png" class="screen hidden" id="screen2"/>
-  <img src="img/content/3.png" class="screen hidden" id="screen3"/>
-  <img src="img/content/4.png" class="screen hidden" id="screen4"/>
-</div>
-
 <div id="fullpage">
-	<div class="section active" id="section0">
+
+  <!-- Main Sction -->
+	<div class="section active title" id="section0">
     <h1 class="wide">BEAKER</h1>
     <p>SCIENCE. EXPERIENCED WITH YOUR HANDS.</p>
     <iframe id="video" src="https://player.vimeo.com/video/132747719?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" ></iframe>
   </div>
-	<div class="section right" id="section1">
-    <h1>200 UNIQUE <br/> CHEMICALS</h1>
-    <p class="">
-      Over 200 unique pieces of chemicals <br/>
-      from the reactive to the most stable. A <br/>
-      greate place to start exploring each <br/>
-      elements that you like.</p>
+
+  <!-- Sction #1 -->
+	<div class="section" id="section1">
+    <div class="left">
+      <img src="img/1.png" />
+    </div>
+    <div class="right">
+      <h1>200 UNIQUE <br/> CHEMICALS</h1>
+      <p>
+        Over 200 unique pieces of chemicals <br/>
+        from the reactive to the most stable. A <br/>
+        greate place to start exploring each <br/>
+        elements that you like.</p>
+    </div>
 	</div>
-	<div class="section left" id="section2">
-    <h1>REACTIONS <br/> TRIED OUT </h1>
-    <p class="">
-      Over 200 unique pieces of chemicals <br/>
-      from the reactive to the most stable. A <br/>
-      greate place to start exploring each <br/>
-      elements that you like.</p>
+
+  <!-- Sction #2 -->
+	<div class="section" id="section2">
+    <div class="left">
+      <h1 style="margin-top:30%">REACTIONS <br/> TRIED OUT </h1>
+      <p>
+        Over 200 unique pieces of chemicals <br/>
+        from the reactive to the most stable. A <br/>
+        greate place to start exploring each <br/>
+        elements that you like.</p>
+    </div>
+    <div class="right">
+      <img src="img/2.png" />
+    </div>
   </div>
-	<div class="section right" id="section3">
-    <h1>SEEING MORE. <br/> LEARNING MORE.</h1>
-    <p class="">
-      Over 200 unique pieces of chemicals <br/>
-      from the reactive to the most stable. A <br/>
-      greate place to start exploring each <br/>
-      elements that you like.</p>
+
+  <!-- Sction #3 -->
+	<div class="section" id="section3">
+    <div class="left">
+      <img src="img/3.png" />
+    </div>
+    <div class="right">
+      <h1>SEEING MORE. <br/> LEARNING MORE.</h1>
+      <p>
+        Over 200 unique pieces of chemicals <br/>
+        from the reactive to the most stable. A <br/>
+        greate place to start exploring each <br/>
+        elements that you like.</p>
+    </div>
   </div>
-	<div class="section left" id="section4">
-    <h1>EXPERIMENT <br/> WITHOUT RISK</h1>
-    <p class="">
-      Over 200 unique pieces of chemicals <br/>
-      from the reactive to the most stable. A <br/>
-      greate place to start exploring each <br/>
-      elements that you like.</p>
+
+  <!-- Sction #4 -->
+	<div class="section" id="section4">
+    <div class="left">
+      <h1>EXPERIMENT <br/> WITHOUT RISK</h1>
+      <p>
+        Over 200 unique pieces of chemicals <br/>
+        from the reactive to the most stable. A <br/>
+        greate place to start exploring each <br/>
+        elements that you like.</p>
+    </div>
+    <div class="right">
+      <img src="img/4.png" />
+    </div>
   </div>
-	<div class="section right" id="section5">
-    <h1>CHANGING THE WAY <br/> WE EXPLORE</h1>
-    <p class="">
-      Over 200 unique pieces of chemicals <br/>
-      from the reactive to the most stable. A <br/>
-      greate place to start exploring each <br/>
-      elements that you like.</p>
+
+  <!-- Sction #5 -->
+	<div class="section" id="section5">
+    <div class="left">
+    </div>
+    <div class="right">
+      <h1>CHANGING THE WAY <br/> WE EXPLORE</h1>
+      <p>
+        Over 200 unique pieces of chemicals <br/>
+        from the reactive to the most stable. A <br/>
+        greate place to start exploring each <br/>
+        elements that you like.</p>
+    </div>
   </div>
 </div>
 
