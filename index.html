@@ -24,7 +24,19 @@
 				sectionsColor: ['rgba(0,0,0,0)','black','black','black','black','black'],
         autoScrolling: false,
 			});
+      $( window ).scroll(function() {
+        var section = $('#section2');
+        var img = $('#section2').find('img');
+        var dist = offset(section);
+        var wHeight = $(window).height();
+        if (dist > -wHeight && dist < wHeight) {
+          img.css('marginTop', parseInt(dist/5)+'px');
+        }
+      });
 		});
+    function offset(ele) {
+      return ele.offset().top - $(window).scrollTop();
+    }
 	</script>
 
 </head>
