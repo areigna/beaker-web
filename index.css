@@ -17,6 +17,9 @@ p{
 	line-height: 130%;
 	z-index:1;
 }
+.section {
+	overflow-x: hidden;
+}
 .section.title{
 	text-align:center;
 }
